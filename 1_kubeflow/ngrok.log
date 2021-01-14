@@ -1,0 +1,10 @@
+t=2021-01-14T19:57:23+0900 lvl=info msg="no configuration paths supplied"
+t=2021-01-14T19:57:23+0900 lvl=info msg="ignoring default config path, could not stat it" path=/home/jih/.ngrok2/ngrok.yml err="stat /home/jih/.ngrok2/ngrok.yml: no such file or directory"
+t=2021-01-14T19:57:23+0900 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-01-14T19:57:24+0900 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-01-14T19:57:24+0900 lvl=info msg="client session established" obj=csess id=1e0991705044
+t=2021-01-14T19:57:25+0900 lvl=info msg="started tunnel" obj=tunnels name="command_line (http)" addr=http://localhost:8080 url=http://7f6f78afd588.ngrok.io
+t=2021-01-14T19:57:25+0900 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:8080 url=https://7f6f78afd588.ngrok.io
+t=2021-01-14T19:57:47+0900 lvl=info msg="join connections" obj=join id=0aad468c345b l=127.0.0.1:8080 r=222.110.148.134:49726
+t=2021-01-14T19:57:48+0900 lvl=info msg="join connections" obj=join id=f1d3358cebc2 l=127.0.0.1:8080 r=222.110.148.134:49726
+t=2021-01-14T19:57:48+0900 lvl=info msg="join connections" obj=join id=b81302cb4fe5 l=127.0.0.1:8080 r=222.110.148.134:49726
