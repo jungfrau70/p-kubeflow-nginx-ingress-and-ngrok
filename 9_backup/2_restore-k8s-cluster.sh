@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo kubeadm reset
+
 # Restore certificates
 sudo cp -r backup/pki /etc/kubernetes/
 
@@ -25,3 +27,5 @@ sudo cp backup/admin.conf /etc/kubernetes/admin.yaml
 sudo kubeadm init --ignore-preflight-errors=DirAvailable--var-lib-etcd \
 		  --pod-network-cidr=10.217.0.0/16
 
+
+sudo cp kube-apiserver.yaml /etc/kubernetes/manifests/

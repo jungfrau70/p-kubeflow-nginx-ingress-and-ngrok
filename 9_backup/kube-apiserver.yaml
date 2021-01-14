@@ -11,7 +11,7 @@ spec:
   containers:
   - command:
     - kube-apiserver
-    - --advertise-address=172.30.1.31
+    - --advertise-address=172.30.1.46
     - --allow-privileged=true
     - --authorization-mode=Node,RBAC
     - --client-ca-file=/etc/kubernetes/pki/ca.crt
@@ -40,12 +40,12 @@ spec:
     - --service-account-signing-key-file=/etc/kubernetes/pki/sa.key
     - --service-account-issuer=api
     - --service-account-api-audiences=api,vault
-    image: k8s.gcr.io/kube-apiserver:v1.15.12
+    image: k8s.gcr.io/kube-apiserver:v1.16.15
     imagePullPolicy: IfNotPresent
     livenessProbe:
       failureThreshold: 8
       httpGet:
-        host: 172.30.1.31
+        host: 172.30.1.46
         path: /healthz
         port: 6443
         scheme: HTTPS

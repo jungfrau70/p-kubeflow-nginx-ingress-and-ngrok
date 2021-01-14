@@ -1,0 +1,11 @@
+--2021-01-14 20:41:23--  https://raw.githubusercontent.com/kubeflow/manifests/v1.1-branch/kfdef/kfctl_istio_dex.v1.1.0.yaml
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.108.133
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2374 (2.3K) [text/plain]
+Saving to: ‘kfctl_k8s_istio.yaml’
+
+kfctl_k8s_istio.yam   0%[                    ]       0  --.-KB/s               kfctl_k8s_istio.yam 100%[===================>]   2.32K  --.-KB/s    in 0s      
+
+2021-01-14 20:41:25 (12.4 MB/s) - ‘kfctl_k8s_istio.yaml’ saved [2374/2374]
+

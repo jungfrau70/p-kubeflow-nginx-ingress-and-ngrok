@@ -1,10 +1,25 @@
-t=2021-01-14T19:57:23+0900 lvl=info msg="no configuration paths supplied"
-t=2021-01-14T19:57:23+0900 lvl=info msg="ignoring default config path, could not stat it" path=/home/jih/.ngrok2/ngrok.yml err="stat /home/jih/.ngrok2/ngrok.yml: no such file or directory"
-t=2021-01-14T19:57:23+0900 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
-t=2021-01-14T19:57:24+0900 lvl=info msg="tunnel session started" obj=tunnels.session
-t=2021-01-14T19:57:24+0900 lvl=info msg="client session established" obj=csess id=1e0991705044
-t=2021-01-14T19:57:25+0900 lvl=info msg="started tunnel" obj=tunnels name="command_line (http)" addr=http://localhost:8080 url=http://7f6f78afd588.ngrok.io
-t=2021-01-14T19:57:25+0900 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:8080 url=https://7f6f78afd588.ngrok.io
-t=2021-01-14T19:57:47+0900 lvl=info msg="join connections" obj=join id=0aad468c345b l=127.0.0.1:8080 r=222.110.148.134:49726
-t=2021-01-14T19:57:48+0900 lvl=info msg="join connections" obj=join id=f1d3358cebc2 l=127.0.0.1:8080 r=222.110.148.134:49726
-t=2021-01-14T19:57:48+0900 lvl=info msg="join connections" obj=join id=b81302cb4fe5 l=127.0.0.1:8080 r=222.110.148.134:49726
+t=2021-01-15T08:20:06+0900 lvl=info msg="no configuration paths supplied"
+t=2021-01-15T08:20:06+0900 lvl=info msg="ignoring default config path, could not stat it" path=/home/jih/.ngrok2/ngrok.yml err="stat /home/jih/.ngrok2/ngrok.yml: no such file or directory"
+t=2021-01-15T08:20:06+0900 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-01-15T08:20:07+0900 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-01-15T08:20:07+0900 lvl=info msg="client session established" obj=csess id=ea46421bf0a1
+t=2021-01-15T08:20:08+0900 lvl=info msg="started tunnel" obj=tunnels name="command_line (http)" addr=http://localhost:31380 url=http://96f3d544cca6.ngrok.io
+t=2021-01-15T08:20:08+0900 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:31380 url=https://96f3d544cca6.ngrok.io
+t=2021-01-15T08:20:40+0900 lvl=info msg="join connections" obj=join id=032bddc52bf4 l=127.0.0.1:31380 r=222.110.148.134:56786
+t=2021-01-15T08:22:30+0900 lvl=info msg="join connections" obj=join id=39900cf91de9 l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:29+0900 lvl=info msg="join connections" obj=join id=7179b10485ab l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:30+0900 lvl=info msg="join connections" obj=join id=fb6d67d467c5 l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:35+0900 lvl=info msg="join connections" obj=join id=bc26d86b88b1 l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:35+0900 lvl=info msg="join connections" obj=join id=f13c7b4c3714 l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:35+0900 lvl=info msg="join connections" obj=join id=701bf03ded9c l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:36+0900 lvl=info msg="join connections" obj=join id=ecc62dccf1be l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:42+0900 lvl=info msg="join connections" obj=join id=ebdff8000505 l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:42+0900 lvl=info msg="join connections" obj=join id=85d9d41c888b l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:42+0900 lvl=info msg="join connections" obj=join id=a88b6c348b76 l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:46+0900 lvl=info msg="join connections" obj=join id=7ddebeacbe2f l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:46+0900 lvl=info msg="join connections" obj=join id=dcc89c010260 l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:46+0900 lvl=info msg="join connections" obj=join id=85453dc40bed l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:24:46+0900 lvl=info msg="join connections" obj=join id=62a88dc9780d l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:25:17+0900 lvl=info msg="join connections" obj=join id=3185b7d6cde1 l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:25:17+0900 lvl=info msg="join connections" obj=join id=09b7693ce2bf l=127.0.0.1:31380 r=222.110.148.134:37046
+t=2021-01-15T08:25:17+0900 lvl=info msg="join connections" obj=join id=ca63915c4dfa l=127.0.0.1:31380 r=222.110.148.134:37046
