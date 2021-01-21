@@ -1,0 +1,141 @@
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+metadata:
+  creationTimestamp: "2020-12-13T10:38:06Z"
+  generation: 2
+  managedFields:
+  - apiVersion: admissionregistration.k8s.io/v1beta1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:webhooks:
+        .: {}
+        k:{"name":"inferenceservice.kfserving-webhook-server.defaulter"}:
+          .: {}
+          f:admissionReviewVersions: {}
+          f:clientConfig:
+            .: {}
+            f:caBundle: {}
+            f:service:
+              .: {}
+              f:name: {}
+              f:namespace: {}
+              f:path: {}
+              f:port: {}
+          f:failurePolicy: {}
+          f:matchPolicy: {}
+          f:name: {}
+          f:namespaceSelector:
+            .: {}
+            f:matchExpressions: {}
+          f:objectSelector: {}
+          f:reinvocationPolicy: {}
+          f:rules: {}
+          f:sideEffects: {}
+          f:timeoutSeconds: {}
+        k:{"name":"inferenceservice.kfserving-webhook-server.pod-mutator"}:
+          .: {}
+          f:admissionReviewVersions: {}
+          f:clientConfig:
+            .: {}
+            f:caBundle: {}
+            f:service:
+              .: {}
+              f:name: {}
+              f:namespace: {}
+              f:path: {}
+              f:port: {}
+          f:failurePolicy: {}
+          f:matchPolicy: {}
+          f:name: {}
+          f:namespaceSelector:
+            .: {}
+            f:matchLabels:
+              .: {}
+              f:serving.kubeflow.org/inferenceservice: {}
+          f:objectSelector: {}
+          f:reinvocationPolicy: {}
+          f:rules: {}
+          f:sideEffects: {}
+          f:timeoutSeconds: {}
+    manager: manager
+    operation: Update
+    time: "2020-12-13T10:38:06Z"
+  - apiVersion: admissionregistration.k8s.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:webhooks:
+        k:{"name":"inferenceservice.kfserving-webhook-server.pod-mutator"}:
+          f:objectSelector:
+            f:matchExpressions: {}
+    manager: kubectl-patch
+    operation: Update
+    time: "2020-12-13T11:03:20Z"
+  name: inferenceservice.serving.kubeflow.org
+  resourceVersion: "11110"
+  selfLink: /apis/admissionregistration.k8s.io/v1/mutatingwebhookconfigurations/inferenceservice.serving.kubeflow.org
+  uid: 98bae410-76f7-4e99-9040-2ad3fd1809b1
+webhooks:
+- admissionReviewVersions:
+  - v1beta1
+  clientConfig:
+    caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMwakNDQWJxZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFhTVJnd0ZnWURWUVFERXc5M1pXSm8KYjI5ckxXTmxjblF0WTJFd0hoY05NakF4TWpFek1UQXpOelU1V2hjTk16QXhNakV4TVRBek56VTVXakFhTVJndwpGZ1lEVlFRREV3OTNaV0pvYjI5ckxXTmxjblF0WTJFd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3CmdnRUtBb0lCQVFEVkJORFRySVRTU2c1aVI1eUM4OEZSd2NwRHQ4TXNzUWliU0NuWWs1VmY0TnA1RHY2YldoYUkKRUc5V1pyMmpMSDRETTRJYUtJRWN3ZUttVUVjTC9WWXczRVY3VEhrbmxNZXNrRi9VNnVHS2VkbDB4aG5PMVYreApqcXN0enRlT1NxMnpOS2J6MFIxeEJ3cUJ1SnNva28rY1RUa1JCVVBHSXhuUWxYYTNzeWJRbjh4SkxqbzlZRU0yClNjTWZ5Z1djT29yckpKYkJHQ0EyakZYUmR3c2NReVB1eDUrTVlmNmtrUDE0N3ppbE9rdzVIMjdqZkVOU1NGQisKNFlXSWlqZVY3akZKZWw5NXFLckNaVlhIQ0tIU0hKK1l0Rnl1TzJoa0h4ZW1CWWlMWGlZaTRyVUdRVUVNbldDZgpEbElSUXh1ZUptNU0wbVBSWmdpamllN0JpRlRsREp2RkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDCnBEQVBCZ05WSFJNQkFmOEVCVEFEQVFIL01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQnRBNHZVOStkM1J5TE8KRmJZOHZaeTJSYUFqSVhOd1o3UDVFTDRNSG9HU1hxcG9rZkV1WFFGeERHaWlENEdZVTBxL2NaTmRlL0lmbjJkcwpOZWNERThTQU1SRU52SHVjdUdsOU1JWU9vaWRpR1lFSUsvZTJhbkVjc2xkbGhwWS85Ukg1NjdSUnU3eDIvTkY5ClpqZDRsck5TNnE2TzZaMm5kOHlleWdHYTltODM5S0xNSUZ0L1JlZm1nYnc1a1BTTFhxUzVGU0s2cjd0Sk9qdTQKNjlTVkF3VUwyRHFJYTRBSG5WZmlsQUQreC9GdkJoM3VVdWVILytoZnRaRzlZOGxjQjRueGo1czhVV1h6eExVaApZamd0c2RRamt3aDlrcXJCRTZIZFUrVzhOR1dSenFmR1BkazZOQ29acWdyTW1HNjZUdVNVcDRPREZvLzQ1cHZ4ClVzNStDL0h1Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    service:
+      name: kfserving-webhook-server-service
+      namespace: kubeflow
+      path: /mutate-inferenceservices
+      port: 443
+  failurePolicy: Fail
+  matchPolicy: Exact
+  name: inferenceservice.kfserving-webhook-server.defaulter
+  namespaceSelector:
+    matchExpressions:
+    - key: control-plane
+      operator: DoesNotExist
+  objectSelector: {}
+  reinvocationPolicy: Never
+  rules:
+  - apiGroups:
+    - serving.kubeflow.org
+    apiVersions:
+    - v1alpha2
+    operations:
+    - CREATE
+    - UPDATE
+    resources:
+    - inferenceservices
+    scope: '*'
+  sideEffects: Unknown
+  timeoutSeconds: 30
+- admissionReviewVersions:
+  - v1beta1
+  clientConfig:
+    caBundle: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUMwakNDQWJxZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFhTVJnd0ZnWURWUVFERXc5M1pXSm8KYjI5ckxXTmxjblF0WTJFd0hoY05NakF4TWpFek1UQXpOelU1V2hjTk16QXhNakV4TVRBek56VTVXakFhTVJndwpGZ1lEVlFRREV3OTNaV0pvYjI5ckxXTmxjblF0WTJFd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3CmdnRUtBb0lCQVFEVkJORFRySVRTU2c1aVI1eUM4OEZSd2NwRHQ4TXNzUWliU0NuWWs1VmY0TnA1RHY2YldoYUkKRUc5V1pyMmpMSDRETTRJYUtJRWN3ZUttVUVjTC9WWXczRVY3VEhrbmxNZXNrRi9VNnVHS2VkbDB4aG5PMVYreApqcXN0enRlT1NxMnpOS2J6MFIxeEJ3cUJ1SnNva28rY1RUa1JCVVBHSXhuUWxYYTNzeWJRbjh4SkxqbzlZRU0yClNjTWZ5Z1djT29yckpKYkJHQ0EyakZYUmR3c2NReVB1eDUrTVlmNmtrUDE0N3ppbE9rdzVIMjdqZkVOU1NGQisKNFlXSWlqZVY3akZKZWw5NXFLckNaVlhIQ0tIU0hKK1l0Rnl1TzJoa0h4ZW1CWWlMWGlZaTRyVUdRVUVNbldDZgpEbElSUXh1ZUptNU0wbVBSWmdpamllN0JpRlRsREp2RkFnTUJBQUdqSXpBaE1BNEdBMVVkRHdFQi93UUVBd0lDCnBEQVBCZ05WSFJNQkFmOEVCVEFEQVFIL01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQnRBNHZVOStkM1J5TE8KRmJZOHZaeTJSYUFqSVhOd1o3UDVFTDRNSG9HU1hxcG9rZkV1WFFGeERHaWlENEdZVTBxL2NaTmRlL0lmbjJkcwpOZWNERThTQU1SRU52SHVjdUdsOU1JWU9vaWRpR1lFSUsvZTJhbkVjc2xkbGhwWS85Ukg1NjdSUnU3eDIvTkY5ClpqZDRsck5TNnE2TzZaMm5kOHlleWdHYTltODM5S0xNSUZ0L1JlZm1nYnc1a1BTTFhxUzVGU0s2cjd0Sk9qdTQKNjlTVkF3VUwyRHFJYTRBSG5WZmlsQUQreC9GdkJoM3VVdWVILytoZnRaRzlZOGxjQjRueGo1czhVV1h6eExVaApZamd0c2RRamt3aDlrcXJCRTZIZFUrVzhOR1dSenFmR1BkazZOQ29acWdyTW1HNjZUdVNVcDRPREZvLzQ1cHZ4ClVzNStDL0h1Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    service:
+      name: kfserving-webhook-server-service
+      namespace: kubeflow
+      path: /mutate-pods
+      port: 443
+  failurePolicy: Fail
+  matchPolicy: Exact
+  name: inferenceservice.kfserving-webhook-server.pod-mutator
+  namespaceSelector:
+    matchLabels:
+      serving.kubeflow.org/inferenceservice: enabled
+  objectSelector:
+    matchExpressions:
+    - key: serving.kubeflow.org/inferenceservice
+      operator: Exists
+  reinvocationPolicy: Never
+  rules:
+  - apiGroups:
+    - ""
+    apiVersions:
+    - v1
+    operations:
+    - CREATE
+    - UPDATE
+    resources:
+    - pods
+    scope: '*'
+  sideEffects: Unknown
+  timeoutSeconds: 30
